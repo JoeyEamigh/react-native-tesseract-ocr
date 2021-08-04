@@ -46,7 +46,6 @@
     "@commitlint/config-conventional": "^8.3.4",
     "cz-conventional-changelog": "^3.1.0",
     "husky": "^4.2.5",
-    "react": "^16.9.0",
     "react-native": "^0.61.5",
     "standard-version": "^8.0.2"
   },
