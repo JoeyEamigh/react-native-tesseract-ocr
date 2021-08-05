@@ -11,8 +11,11 @@
 [![PRs Welcome][prs-badge]][prs]
 [![Commitizen friendly][cz-badge]][cz]
 [![MIT License][license-badge]][license]
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![Watch on GitHub][github-watch-badge]][github-watch]
@@ -34,9 +37,16 @@ NOTE: It is recommended to use react-native >= 0.60.0
 
 `$ react-native link react-native-tesseract-ocr`
 
+#### iOS Support
+
+add to project podfile then install pods
+
+```
+  # Tesseract
+  pod 'TesseractOCRiOS', :git => 'git://github.com/parallaxe/Tesseract-OCR-iOS.git', :branch => 'macos-support'
+```
 
 ## Example
-
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/jonathanpalma/react-native-tesseract-ocr/master/example/showcase.android.picker.gif" alt="Showcase Android using Picker" width="215" height="430" style="margin: 0px 10px" />
@@ -75,7 +85,6 @@ const tessOptions = { level: LEVEL_WORD };
 TesseractOcr.recognizeTokens(imageSource, LANG_ENGLISH, tessOptions);
 ```
 
-
 ### useEventListener
 
 ```typescript
@@ -91,8 +100,6 @@ function App() {
   // return ...
 }
 ```
-
-
 
 ## Contributing
 
